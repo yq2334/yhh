@@ -1,0 +1,24 @@
+{
+    "id": "ml-signature",
+    "name": "ml-signature手写签名，横竖屏，保存和上传图片",
+    "displayName": "ml-signature手写签名，横竖屏，保存和上传图片",
+    "version": "0.1.0",
+    "description": "ml-signature签名签字，支持横竖屏，图片同理，自定义多个参数",
+    "keywords": [
+        "ml-signature",
+        "canvas",
+        "手写签名",
+        "签字",
+        "签名"
+    ],
+    "dcloudext": {
+        "category": [
+            "前端组件",
+            "通用组件"
+        ]
+    },
+    "dependencies": {
+        "crypto-js": "^4.2.0",
+        "jweixin-module": "^1.6.0"
+    }
+}
