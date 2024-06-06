@@ -1,0 +1,187 @@
+{
+    "name" : "翼宏惠",
+    "appid" : "__UNI__42BCB5D",
+    "description" : "翼宏惠",
+    "versionName" : "2.0.1",
+    "versionCode" : 201,
+    "transformPx" : false,
+    "app-plus" : {
+        "usingComponents" : true,
+        "nvueCompiler" : "uni-app",
+        "splashscreen" : {
+            "alwaysShowBeforeRender" : true,
+            "waiting" : true,
+            "autoclose" : true,
+            "delay" : 0
+        },
+        "modules" : {
+            "Camera" : {},
+            "Barcode" : {},
+            "Orientation" : {},
+            "Webview-x5" : {}
+        },
+        "webView" : {
+            // 3.5.0 + 仅Android支持
+            "x5" : {
+                // 此属性需要勾选 Android X5 Webview 模块，详细参见下面的说明
+                "timeOut" : 3000, // 超时时间
+                "showTipsWithoutWifi" : true, // 是否在非WiFi网络环境时，显示用户确认下载x5内核的弹窗。默认值false
+                "allowDownloadWithoutWiFi" : true // 是否允许用户在非WiFi网络时进行x5内核的下载。默认值false（如果为true，就不会显示用户确认的弹窗。）
+            }
+        },
+        "compatible" : {
+            "ignoreVersion" : true //true表示忽略版本检查提示框，HBuilderX1.9.0及以上版本支持  
+        },
+        "distribute" : {
+            "android" : {
+                "permissions" : [
+                    "<uses-feature android:name=\"android.hardware.camera\"/>",
+                    "<uses-feature android:name=\"android.hardware.camera.autofocus\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.CAMERA\"/>",
+                    "<uses-permission android:name=\"android.permission.CAPTURE_VIDEO_OUTPUT\"/>",
+                    "<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.FLASHLIGHT\"/>",
+                    "<uses-permission android:name=\"android.permission.GET_ACCOUNTS\"/>",
+                    "<uses-permission android:name=\"android.permission.MOUNT_UNMOUNT_FILESYSTEMS\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_LOGS\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_PHONE_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.VIBRATE\"/>",
+                    "<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>",
+                    "<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>"
+                ],
+                "abiFilters" : [ "armeabi-v7a", "arm64-v8a" ],
+                "schemes" : "xyhh"
+            },
+            "ios" : {
+                "dSYMs" : false,
+                "deploymentTarget" : "11",
+                "privacyDescription" : {
+                    "NSPhotoLibraryAddUsageDescription" : "保存图片到相册",
+                    "NSPhotoLibraryUsageDescription" : "识别身份证及银行卡信息",
+                    "NSCameraUsageDescription" : "人脸识别调起摄像头"
+                },
+                "urltypes" : "xyhh"
+            },
+            "sdkConfigs" : {
+                "ad" : {}
+            },
+            "splashscreen" : {
+                "useOriginalMsgbox" : true
+            },
+            "icons" : {
+                "android" : {
+                    "hdpi" : "unpackage/res/icons/72x72.png",
+                    "xhdpi" : "unpackage/res/icons/96x96.png",
+                    "xxhdpi" : "unpackage/res/icons/144x144.png",
+                    "xxxhdpi" : "unpackage/res/icons/192x192.png"
+                },
+                "ios" : {
+                    "appstore" : "unpackage/res/icons/1024x1024.png",
+                    "ipad" : {
+                        "app" : "unpackage/res/icons/76x76.png",
+                        "app@2x" : "unpackage/res/icons/152x152.png",
+                        "notification" : "unpackage/res/icons/20x20.png",
+                        "notification@2x" : "unpackage/res/icons/40x40.png",
+                        "proapp@2x" : "unpackage/res/icons/167x167.png",
+                        "settings" : "unpackage/res/icons/29x29.png",
+                        "settings@2x" : "unpackage/res/icons/58x58.png",
+                        "spotlight" : "unpackage/res/icons/40x40.png",
+                        "spotlight@2x" : "unpackage/res/icons/80x80.png"
+                    },
+                    "iphone" : {
+                        "app@2x" : "unpackage/res/icons/120x120.png",
+                        "app@3x" : "unpackage/res/icons/180x180.png",
+                        "notification@2x" : "unpackage/res/icons/40x40.png",
+                        "notification@3x" : "unpackage/res/icons/60x60.png",
+                        "settings@2x" : "unpackage/res/icons/58x58.png",
+                        "settings@3x" : "unpackage/res/icons/87x87.png",
+                        "spotlight@2x" : "unpackage/res/icons/80x80.png",
+                        "spotlight@3x" : "unpackage/res/icons/120x120.png"
+                    }
+                }
+            }
+        },
+        "nativePlugins" : {
+            "Mpaas-Scan" : {
+                "AppId" : "ALIPUBD15157E242301",
+                "License" : "LdtkMmgmknKDfkENJb9+4JYyB7iAtSmOWLAO7usTVVtSznG9iT1IuMBUKNNcIHrLkXU4uke98oRnTTDDJlZeRJKjSdThjnTueHlpmGuDqA6OyE67nzLbumn/ikbJuBrvLMcrB7DXeBA2Lq6KVG0M7vdq51USCNlVWQ7Sh3I6TOHKXVWCerhaKkyxsfzVlbhRes3BPymiFigSMCPjV6QE4Z1ZCRva7lxRuXT8zgyUSw9V9OrqLrhtZggzixSxSHEtnccctpxMmT7/DNtumbGlptJMzz15KcQi/CnVQLRBiz1kGtFuGIp53b0Ja6p8zDo1Bnk0OwK7OggPfdHCR3aIFw==",
+                "WorkspaceId" : "default",
+                "__plugin_info__" : {
+                    "name" : "支付宝原生扫码插件",
+                    "description" : "支付宝原生扫码组件，包体积仅0.7MB，15分钟即可完成接入。同时，mPaaS提供「扫码分析」大盘",
+                    "platforms" : "Android,iOS",
+                    "url" : "https://ext.dcloud.net.cn/plugin?id=2636",
+                    "android_package_name" : "com.xyhh.android",
+                    "ios_bundle_id" : "",
+                    "isCloud" : true,
+                    "bought" : 1,
+                    "pid" : "2636",
+                    "parameters" : {
+                        "AppId" : {
+                            "des" : "Android平台的AppId，请填写Android的config文件中的appId对应的值",
+                            "key" : "mobilegw.appid",
+                            "value" : ""
+                        },
+                        "License" : {
+                            "des" : "Android平台的License,，请填写Android的config文件中的mpaasConfigLicense对应的值",
+                            "key" : "mpaasConfigLicense",
+                            "value" : ""
+                        },
+                        "WorkspaceId" : {
+                            "des" : "Android平台的WorkspaceId，请填写Android的config文件中的workspaceId对应的值",
+                            "key" : "workspaceId",
+                            "value" : ""
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "quickapp" : {},
+    "mp-weixin" : {
+        "appid" : "wxc123dbf7119ba95c",
+        "setting" : {
+            "urlCheck" : false,
+            "es6" : false,
+            "minified" : true,
+            "postcss" : true
+        },
+        "optimization" : {
+            "subPackages" : true
+        },
+        "usingComponents" : true,
+        "permission" : {
+            "scope.camera" : true
+        }
+    },
+    "vueVersion" : "2",
+    "h5" : {
+        // "publicPath" : "/h5/",
+        "template" : "static/index.html",
+        "devServer" : {
+            "disableHostCheck" : true,
+            "proxy" : {
+                "/api" : {
+                    "target" : "https://jlsh.globebill.com",
+                    "changeOrigin" : true, //是否跨域
+                    "secure" : false, // 设置支持https协议的代理
+                    "pathRewrite" : {
+                        "^/api" : "" //这里一定要留空，不然有问题
+                    }
+                }
+            }
+        },
+        "title" : "翼宏惠",
+        "router" : {
+            "mode" : "hash",
+            "base" : "./"
+        },
+        "uniStatistics" : {
+            "enable" : false
+        }
+    },
+    "locale" : "zh-Hans"
+}
