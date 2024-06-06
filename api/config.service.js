@@ -7,7 +7,7 @@ if (process.env.NODE_ENV == 'development') {
   BASE_URL = 'https://jlsh.globebill.com/api_test'
   //  #endif
 } else {
-  BASE_URL = 'https://jlsh.globebill.com/api'  
+  BASE_URL = 'https://jlsh.globebill.com/api_test'  
   //  #ifdef H5
   BASE_URL = 'https://jlsh.globebill.com/api_test'
   //  #endif
